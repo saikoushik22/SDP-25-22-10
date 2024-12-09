@@ -1,0 +1,108 @@
+/* Main Dashboard Container */
+.main-dashboard {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent any overflow */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background Video Styling */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure video covers the entire container */
+  z-index: -1; /* Place the video behind other content */
+  filter: brightness(70%); /* Dim the video slightly for better text visibility */
+}
+
+/* Title Styling */
+.title {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  z-index: 1; /* Ensure the title is above the video */
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8); /* Stronger shadow for clarity */
+  line-height: 1.3;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Buttons Container */
+.buttons {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1; /* Ensure buttons are above the video */
+  display: flex;
+  gap: 15px; /* Add spacing between buttons */
+  flex-wrap: wrap; /* Wrap buttons on smaller screens */
+}
+
+/* Buttons Styling */
+.button {
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent dark background */
+  color: white;
+  border: 2px solid transparent; /* Add subtle border effect */
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s, border-color 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+  text-transform: uppercase; /* Button text in uppercase */
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.9); /* Lighter background on hover */
+  color: black;
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  border-color: rgba(0, 0, 0, 0.7); /* Add a border on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Enhance shadow on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 2.5rem; /* Reduce font size for smaller screens */
+    top: 20%;
+  }
+
+  .button {
+    padding: 12px 30px; /* Adjust button size for smaller screens */
+    font-size: 1rem;
+  }
+
+  .buttons {
+    bottom: 12%;
+    gap: 10px; /* Adjust spacing between buttons */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 1.8rem; /* Smaller title font for very small screens */
+    top: 18%;
+  }
+
+  .button {
+    padding: 10px 20px; /* Adjust padding for small screens */
+    font-size: 0.9rem;
+  }
+
+  .buttons {
+    bottom: 10%;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 8px; /* Add smaller spacing for stacked buttons */
+  }
+}

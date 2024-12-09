@@ -1,0 +1,135 @@
+/* Overall Page Styling */
+.faculty-signup {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(to right, #a8e063, #56ab2f, #5ac8fa); /* Light green to light blue */
+  font-family: "Arial", sans-serif;
+  color: white;
+}
+
+/* Signup Form on the Left */
+.signup-form-container {
+  width: 40%;
+  padding: 40px;
+  margin-left: 5%;
+  background-color: #ffffff; /* White background */
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  color: #333; /* Dark text for better contrast */
+  text-align: center;
+}
+
+/* Right-side Text */
+.faculty-registration-text {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  text-align: left;
+}
+
+.faculty-registration-text h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.faculty-registration-text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Form Title */
+.signup-form-container h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333; /* Darker text color for title */
+}
+
+/* Input Fields */
+.input-container {
+  margin-bottom: 20px;
+}
+
+.input-container input,
+.input-container select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f9f9f9;
+  color: #333; /* Dark text for input */
+  font-size: 16px;
+}
+
+.input-container input:focus,
+.input-container select:focus {
+  outline: none;
+  border-color: #56ab2f; /* Green focus effect */
+  box-shadow: 0 0 8px rgba(86, 171, 47, 0.5);
+}
+
+/* Dropdown Label */
+.subject-label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Submit Button */
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: #56ab2f; /* Green button */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #3e8b20; /* Darker green on hover */
+  transform: translateY(-3px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Footer Elements */
+.footer {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #56ab2f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signup-form-container {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .faculty-registration-text {
+    display: none; /* Hide right-side text on smaller screens */
+  }
+}

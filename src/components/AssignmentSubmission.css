@@ -1,0 +1,113 @@
+/* Ensure the dashboard spans the entire width */
+.submit-assignment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100vh;
+  background-color: #f5f5f5; /* Light gray background */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form styles */
+form {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Drag-and-drop area styling */
+.drag-drop-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+  border: 2px dashed #aaa;
+  border-radius: 8px;
+  background-color: #fafafa;
+  text-align: center;
+  color: #777;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.drag-drop-area.dragging {
+  border-color: #007bff; /* Blue when dragging */
+  background-color: #e9f7ff;
+}
+
+.drag-drop-area p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Submit button */
+.submit-button {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Error and success messages */
+.error-message {
+  color: #d9534f;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: #5cb85c;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Ensure the dashboard fills the width */
+.submit-assignment-container > *:first-child {
+  width: 100%;
+}

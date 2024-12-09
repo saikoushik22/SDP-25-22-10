@@ -1,0 +1,58 @@
+/* ViewGrade.css */
+
+.view-grades-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .view-grades-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .grades-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .grades-table th, .grades-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .grades-table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .grades-table td {
+    background-color: #f2f2f2;
+  }
+  
+  .grades-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .grades-table tr:hover {
+    background-color: #e1e1e1;
+  }
+  
+  .grades-table td, .grades-table th {
+    font-size: 16px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .grades-table th, .grades-table td {
+      padding: 8px;
+      font-size: 14px;
+    }
+  }
+  

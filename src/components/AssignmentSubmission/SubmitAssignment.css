@@ -1,0 +1,24 @@
+/* src/components/AssignmentSubmission/SubmitAssignment.css */
+
+.submit-assignment-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .submit-assignment-container h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .submit-assignment-container input {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 60%;
+  }
+  
+  .submit-assignment-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

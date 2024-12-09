@@ -1,0 +1,21 @@
+.profile-container {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .profile-details {
+    margin-top: 20px;
+  }
+  
+  .profile-details p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .profile-details strong {
+    color: #333;
+  }
+  

@@ -1,0 +1,74 @@
+/* Styling for the login page */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f9fafc; /* Light, clean background color */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .login-form-container {
+    background: #ffffff; /* Solid white background for form */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 400px;
+    max-width: 90%;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #3f8cb5; /* Professional blue for the title */
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd; /* Light border for form fields */
+    border-radius: 8px;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #3f8cb5; /* Focus color matches theme */
+  }
+  
+  .submit-button {
+    background: #3f8cb5;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .submit-button:hover {
+    background: #2f6a88; /* Slightly darker blue on hover */
+  }
+  
+  .link {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .link a {
+    color: #3f8cb5;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .link a:hover {
+    text-decoration: underline;
+  }
+  

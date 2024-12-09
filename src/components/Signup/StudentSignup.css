@@ -1,0 +1,100 @@
+/* Student Signup Container */
+.signup-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3f8cb5;
+}
+
+button.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3f8cb5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button.submit-button:hover {
+  background-color: #2f6a88;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Login Option */
+.login-option {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-link {
+  color: #3f8cb5;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.login-link:hover {
+  color: #2f6a88;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .signup-container {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button.submit-button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
